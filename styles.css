@@ -30,6 +30,9 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--background-black);
+
+    display: flex;
+    flex-direction: row;
 }
 
 .bg-image {
@@ -78,4 +81,27 @@ body {
     font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 18px;
+}
+
+.right {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text {
+    width: 80%;
+}
+
+.intro-text p {
+
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 0 4rem;
+}
+
+.intro-text .push-down {
+    margin: 3rem 0 0 4rem;
 }
