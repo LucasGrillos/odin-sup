@@ -86,8 +86,9 @@ body {
 .right {
     width: 70vw;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
+    border: 1px solid red;
 }
 
 .intro-text {
@@ -99,9 +100,30 @@ body {
     font-size: 20px;
     font-weight: 500;
     color: white;
-    margin: 0 0 0 4rem;
+    padding-left: 4rem;
 }
 
 .intro-text .push-down {
-    margin: 3rem 0 0 4rem;
+    padding: 3rem 0 0 4rem;
+}
+
+form {
+    display: block;
+    width: 100%;
+}
+
+.form {
+
+}
+
+.motivation {
+    width: 100%;
+}
+
+.motivation h2 {
+    margin: 1rem 0;
+}
+
+.form {
+    padding: 0 0 0 4rem;
 }
