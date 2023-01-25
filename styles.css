@@ -19,6 +19,7 @@
     --bg-bottom-text: rgba(255, 255, 255, 0.3);
     --form-bg: #101010;
     --input-color: #ABA7A3;
+    --button-color: #2a9a8d;
 }
 
 input {border:0;outline:0;}
@@ -159,4 +160,34 @@ form {
     color: var(--input-color);
     border: 1px solid var(--bg-bottom-text);
     border-radius: 3px;
+}
+
+.input input:focus {
+    border: 2px solid var(--button-color);
+    border-radius: 3px;
+}
+
+.login  {
+    padding: 2rem 0 0 4rem;
+}
+
+.login button {
+    border: 2px solid var(--button-color);
+    border-radius: 6px;
+    background-color: var(--background-black);
+    padding: .75rem 2rem;
+    color: var(--button-color);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.login button:hover {
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+}
+
+.login p {
+    font-size: 18px;
+    color: white;
 }
