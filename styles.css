@@ -20,6 +20,7 @@
     --form-bg: #101010;
     --input-color: #ABA7A3;
     --button-color: #2a9a8d;
+    --error-color: #FF4136;
 }
 
 input {border:0;outline:0;}
@@ -43,7 +44,7 @@ body {
 
 .bg-image {
     position: relative;
-    width: 30vw;
+    width: 35vw;
     height: 100%;
     background-image: url(./images/lisa-gageler-unsplash.jpg);
     background-size: cover;
@@ -90,7 +91,7 @@ body {
 }
 
 .right {
-    width: 70vw;
+    width: 65vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -128,8 +129,8 @@ form {
     display: flex;
     flex-flow: row wrap;
     column-gap: 20px;
-    row-gap: 10px;
-    width: 80%;
+    row-gap: 15px;
+    width: 85%;
 }
 
 .motivation {
@@ -167,6 +168,16 @@ form {
     border-radius: 3px;
 }
 
+.input input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid var(--error-color);
+    border-radius: 3px;
+}
+/*
+.input input:invalid {
+    border: 2px solid var(--error-color);
+    border-radius: 3px;
+}
+*/
 .login  {
     padding: 2rem 0 0 4rem;
 }
